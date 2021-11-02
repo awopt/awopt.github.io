@@ -6,7 +6,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
 
-    <title>MT-Opt</title>
+    <title>AW-Opt</title>
 
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -89,10 +89,14 @@
                         </a>
                     </li><br>
                     <li>
+                        <a href="https://tedxiao.me/">
                           Ted Xiao
+                        </a>
                     </li>
                     <li>
+                    	<a href="https://www.alexirpan.com/">
                           Alex Irpan
+                  	</a>
                     </li>                    
                     <li>
                         <a href="https://cs.stanford.edu/people/khansari/">
@@ -156,7 +160,7 @@
                     Abstract
                 </h3>
                 <p class="text-justify">
-General-purpose robotic systems must master a large repertoire of diverse skills to be useful in a range of daily tasks. While reinforcement learning provides a powerful framework for acquiring individual behaviors, the time needed to acquire each skill makes the prospect of a generalist robot trained with RL daunting. In this paper, we study how a large-scale collective robotic learning system can acquire a repertoire of behaviors simultaneously, sharing exploration, experience, and representations across tasks. In this framework new tasks can be continuously instantiated from previously learned tasks improving overall performance and capabilities of the system. To instantiate this system, we develop a scalable and intuitive framework for specifying new tasks through user-provided examples of desired outcomes, devise a multi-robot collective learning system for data collection that simultaneously collects experience for multiple tasks, and develop a scalable and generalizable multi-task deep reinforcement learning method, which we call MT-Opt. We demonstrate how MT-Opt can learn a wide range of skills, including semantic picking (i.e., picking an object from a particular category), placing into various fixtures (e.g., placing a food item onto a plate), covering, aligning, and rearranging. We train and evaluate our system on a set of 12 real-world tasks with data collected from 7 robots, and demonstrate the performance of our system both in terms of its ability to generalize to structurally similar new tasks, and acquire distinct new tasks more quickly by leveraging past experience.
+Robotic skills can be learned via imitation learning (IL) using user-provided demonstrations, or via reinforcement learning (RL) using large amounts of autonomously collected experience. Both methods have complementary strengths and weaknesses: RL can reach a high level of performance, but requires exploration, which can be very time consuming and unsafe; IL does not require exploration, but only learns skills that are as good as the provided demonstrations. Can a single method combine the strengths of both approaches? A number of prior methods have aimed to address this question, proposing a variety of techniques that integrate elements of IL and RL. However, scaling up such methods to complex robotic skills that integrate diverse offline data and generalize meaningfully to real-world scenarios still presents a major challenge. In this paper, our aim is to test the scalability of prior IL + RL algorithms and devise a system based on detailed empirical experimentation that combines existing components in the most effective and scalable way. To that end, we present a series of experiments aimed at understanding the implications of each design decision, so as to develop a combined approach that can utilize demonstrations and heterogeneous prior data to attain the best performance on a range of real-world and realistic simulated robotic problems. Our complete method, which we call AW-Opt, combines elements of advantage-weighted regression and QT-Opt, providing a unified approach for integrating demonstrations and offline data for robotic manipulation.
                 </p>
             </div>
         </div>
