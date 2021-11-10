@@ -199,7 +199,7 @@ Robotic skills can be learned via imitation learning (IL) using user-provided de
             	Both algorithms are provided with demonstrations for offline pretraining, either from human or from previous successful RL rollouts. Afterwards they switch to on-policy data collection and training. We found that QT-Opt fails to learn from only successful rollouts, and even fails to make progress during on-policy training for tasks with a 7 DoF action space. On the other hand, AWAC does attain non-zero success rates from the demonstrations, but performance is still poor, and performance collapses during online fine-tuning for all our sparse-reward manipulation tasks.
 	        </p>
 		<p style="test-align:center;">
-		    <image src="img/performance-summary.png"  class="image-responsive" height="1000px">
+		    <image src="img/performance-summary.png"  class="image-responsive" width="100%">
 		</p>
 		<p class="text-justify">
 		We introduced a series of modifications to AWAC that bring it closer to QT-Opt, improving overall learning performance while retaining the ability to utilize demonstrations, culminating in our full AW-Opt algorithm. 
